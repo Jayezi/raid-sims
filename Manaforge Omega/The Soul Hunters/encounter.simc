@@ -1,0 +1,48 @@
+# Made by mikiq on Discord
+
+max_time=420
+vary_combat_length=0
+
+# --- Window 1: 0:01–1:54 (141s total) ---
+# 3 targets: 0:01–0:41
+raid_events+=/adds,count=2,first=1,cooldown=10000,last=419,duration=40
+# 2 targets: 0:41–0:49
+raid_events+=/adds,count=1,first=41,cooldown=10000,last=419,duration=8
+# 3 targets: 0:49–1:15
+raid_events+=/adds,count=2,first=49,cooldown=10000,last=419,duration=26
+# 2 targets: 1:15–1:23
+raid_events+=/adds,count=1,first=75,cooldown=10000,last=419,duration=8
+# 3 targets: 1:23–1:54
+raid_events+=/adds,count=2,first=83,cooldown=10000,last=419,duration=31
+
+# --- Window 2: 2:21–4:02 (141s total) ---
+# 3 targets: 2:21–2:50
+raid_events+=/adds,count=2,first=141,cooldown=10000,last=419,duration=29
+# 2 targets: 2:50–2:58
+raid_events+=/adds,count=1,first=170,cooldown=10000,last=419,duration=8
+# 3 targets: 2:58–3:24
+raid_events+=/adds,count=2,first=178,cooldown=10000,last=419,duration=26
+# 2 targets: 3:24–3:31
+raid_events+=/adds,count=1,first=204,cooldown=10000,last=419,duration=7
+# 3 targets: 3:31–4:02
+raid_events+=/adds,count=2,first=211,cooldown=10000,last=419,duration=31
+
+# --- Window 3: 4:30–6:13 (103s total) ---
+# 3 targets: 4:30–4:59
+raid_events+=/adds,count=2,first=270,cooldown=10000,last=419,duration=29
+# 2 targets: 4:59–5:06
+raid_events+=/adds,count=1,first=299,cooldown=10000,last=419,duration=7
+# 3 targets: 5:06–5:33
+raid_events+=/adds,count=2,first=306,cooldown=10000,last=419,duration=27
+# 2 targets: 5:33–5:40
+raid_events+=/adds,count=1,first=333,cooldown=10000,last=419,duration=7
+# 3 targets: 5:40–6:13
+raid_events+=/adds,count=2,first=340,cooldown=10000,last=419,duration=33
+
+# --- Window 4: 6:42–7:00 (18s total) ---
+# 3 targets: 6:42–6:45
+raid_events+=/adds,count=2,first=402,cooldown=10000,last=419,duration=3
+# 2 targets: 6:45–6:52
+raid_events+=/adds,count=1,first=405,cooldown=10000,last=419,duration=7
+# 3 targets: 6:52–7:00
+raid_events+=/adds,count=2,first=412,cooldown=10000,last=419,duration=8

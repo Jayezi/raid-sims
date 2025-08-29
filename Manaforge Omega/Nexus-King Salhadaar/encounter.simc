@@ -1,0 +1,37 @@
+# from azortharion and mikiq on discord
+
+# optional, top gear results will be ranked by dmg to bosses and titan, remove the # to enable
+# profileset_metric=prioritydps
+
+# required, includes adds with type=add_boss in priority dps results (secondary boss is represented as an add at times)
+merge_enemy_priority_dmg=1
+
+ignore_invulnerable_targets=1
+
+max_time=477
+vary_combat_length=0.02
+
+override.bloodlust=1
+bloodlust_time=265
+
+# represents the current boss target, starts as nexus king, then voidwing for burn, then nexus king until the end
+enemy=primary
+
+# limits 20% execute to a more realistic uptime to account for the boss healing
+enemy_death_pct=11
+
+# voidwing joins at 2:10 until 2:42 platforms
+raid_events=/adds,name=secondary1,count=1,first=130,duration=32,type=add_boss,cooldown=1000
+
+# invuln boss for platforms at 2:42
+raid_events+=/invulnerable,retarget=1,first=162,cooldown=1000,duration=66
+
+# platforms at 2:47
+raid_events+=/adds,name=big,count=1,first=167,duration=52,type=add_boss,cooldown=1000
+raid_events+=/adds,name=small,count=5,first=167,duration=52,cooldown=1000
+
+# after platforms both bosses active from 3:48 to 4:20
+raid_events+=/adds,name=secondary2,count=1,first=228,duration=32,type=add_boss,cooldown=1000
+
+# burn phase at 4:25 then only boss present until end
+raid_events+=/vulnerable,cooldown=1000,first=265,duration=30,multiplier=1.0
